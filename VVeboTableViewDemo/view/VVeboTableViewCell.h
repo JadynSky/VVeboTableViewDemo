@@ -23,9 +23,25 @@
 
 @interface VVeboTableViewCell : UITableViewCell
 
+
+/**
+ cell的数据
+ */
 @property (nonatomic, weak) NSDictionary *data;
+
+/**
+ 绘制cell的内容
+ */
 - (void)draw;
+
+/**
+ 清除cell的内容
+ */
 - (void)clear;
+
+/**
+ 释放内存
+ */
 - (void)releaseMemory;
 
 @end
